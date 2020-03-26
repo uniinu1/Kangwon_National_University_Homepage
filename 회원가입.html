@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<!--회원가입 기본 정보 입니다.-->
+	<form name="input" action="getid.jsp" method="get">
+		이름: <input type="text" name="name"><br>
+		학번: <input type="text" name="number"><br>
+		아이디: <input type="text" name="name"><br>
+		패스워드: <input type="password"name="pass"><br>
+		성별: 
+		<input type="radio" name="gender" value="male">남성
+		<input type="radio" name="gender" value="female">여성<br>
+		생년월일: <input type="date"/> <br>
+		이메일: <input type="email" name="email"/><br>
+		전화번호 : <input type="tel" name="tel"/><br>
+
+		<!--사는 곳 입니다-->
+		주소: <select name="사는 곳">
+			<option value=:"강원도">강원도</option>
+			<option value=:"경상남도">경상남도</option>
+			<option value=:"서울특별시">경상남도</option>
+			<option value=:"경상북도">경상북도</option>
+			<option value=:"전라남도">전라남도</option><br>
+		</select>
+		<br>
+		<!--자기소래란 입니다.-->
+		자기소개<br>
+		<textarea name="feedback" rows="5" cols="50"></textarea><br>
+		<!--사진 제출란입니다-->
+		사진: <input type="file" accept="image/jpg,image/gif"><br><br>	
+		<!--제출, 초기화 버튼입니다-->
+		<input type="submit" value="제출">
+		<input type="reset" value="초기화">
+	</form>
+</body>
+</html>
